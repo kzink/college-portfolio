@@ -1,0 +1,13 @@
+I-mac	97000
+PC	101999
+Monitor	49999
+CD Writer	9077
+DVD Writer	17000
+Keyboard	2085
+Mouse	1095
+Speakers	9000
+Hard Drive	10000
+RAM	10000
+CPU	15085
+Motherboard	12055
+Network Card	1999

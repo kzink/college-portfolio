@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<title>Prime Number Generator using Threads</title>
+<?php
+include("../header.php");
+?>
+</head>
+
+<body>
+<h1>Prime Number Generator using Threads</h1>
+
+<?php
+include("../navbar.php");
+?>
+
+<h2>Program Description</h2>
+<div class="gentry">
+This program generates prime numbers using the same algorithm as my 
+<a href="../png-pipes/png-pipes.php">Prime Number Generator - Pipes</a> 
+ program.  However, instead of sending data to other processes through pipes, this program 
+demonstrates communication between threads by sharing access to the same memory.
+In particular, each thread shares access with another thread to a deque container class. Access 
+to the deques is secured through the use of POSIX mutexes, and every read and write operation done 
+to the deque is wrapped in error-checking "read" and "write" functions.
+</div>
+
+<h2>Code Snippet</h2>
+<div class="gentry">
+<table class="codebox">
+<tr><td><pre> 
+void WriteDeque(deque&lt;int> &amp;p, pthread_mutex_t &amp;mutex, pthread_cond_t &amp;condition, int temp)
+{
+    int rc = pthread_mutex_lock(&amp;mutex); //secure mutex
+    ErrorCheck(rc);    //error checking for mutex locking
+    
+    p.push_back(temp);    //adds int to the deque
+    rc = pthread_mutex_unlock(&amp;mutex);  //unlocks mutex 
+    ErrorCheck(rc);
+
+    rc = pthread_cond_signal(&amp;condition);    //signals a write has taken placE
+    ErrorCheck(rc);
+}
+
+void ErrorCheck(int x)
+{
+    if (x != 0)
+    {
+        cerr &lt;&lt; "MAJOR ERROR" &lt;&lt; endl;
+        exit(-1);
+    }
+}
+</pre></td></tr>
+</table>
+<p class="subtext">"Write" function WriteDeque and the error-checking function</p>
+</div>
+
+<h2>Features</h2>
+<div class="gentry"><ul>
+<li>Written in C++</li>
+<li>Functional programming approach</li>
+<li>Demonstrates usage of threads</li>
+<li>Threads share access to a deque safetly with mutexes</li>
+<li>Implements thorough error checking for mutexes</li>
+</ul>
+</div>
+
+<h2>Sample Run</h2>
+<div class="gentry">
+<table class="codebox" >
+<tr><td><pre> 
+kevin@LightningJoe:~/public_html/portfolio/png-threads$ ./png-threads 75
+
+Known Prime: 3
+Known Prime: 5
+Known Prime: 7
+Known Prime: 11
+Known Prime: 13
+Known Prime: 17
+Prime: 19
+Prime: 23
+Prime: 29
+Prime: 31
+Prime: 37
+Prime: 41
+Prime: 43
+Prime: 47
+Prime: 53
+Prime: 59
+Prime: 61
+Prime: 67
+Prime: 71
+Prime: 73
+</pre></td></tr>
+</table>
+</div>
+
+<?php
+include("../footer.php");
+?>
+
+</body>
+</html>

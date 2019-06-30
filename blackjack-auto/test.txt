@@ -1,0 +1,106 @@
+Insert base bet amount:
+Insert maximum number of hands to play:
+Insert dollar amount to stop at:
+Enter starting amount of cash:
+Enter number of decks:
+Starting money - 400
+Number of decks - 1
+Number of total cards - 52
+
+Shuffling shoe...
+client: resetting card count
+Starting game...
+
+client: Hand #0 Data
+client: ------------------
+client: running count: 0
+client: Remaining cards: 52
+client: True Count is 0.000000 --> Multiplier is 1
+
+Place bet ($400 available, 0 to quit):
+client: betting 10
+Dealer has : Q A = 21
+
+You have : 5 8 = 13
+Dealer blackjack!! - You lose $10
+
+client: Hand #1 Data
+client: ------------------
+client: running count: -1
+client: Remaining cards: 48
+client: True Count is -1.083333 --> Multiplier is 1
+
+Place bet ($390 available, 0 to quit):
+client: betting 10
+Dealer shows : 9
+You have : K 8 = 18
+(H)it (S)tand (D)ouble : 
+client: s
+Dealer has : 9 A = 20
+stand
+You lose $10
+
+client: Hand #2 Data
+client: ------------------
+client: running count: -3
+client: Remaining cards: 44
+client: True Count is -3.545455 --> Multiplier is 1
+
+Place bet ($380 available, 0 to quit):
+client: betting 10
+Dealer shows : 6
+You have : 7 3 = 10
+(H)it (S)tand (D)ouble : 
+client: d
+    Doubled bet to $20
+You have : 7 3 Q = 20
+Dealer has : 6 8 = 14
+hit
+Dealer has : 6 8 4 = 18
+stand
+You win $20
+
+client: Hand #3 Data
+client: ------------------
+client: running count: -1
+client: Remaining cards: 38
+client: True Count is -1.368421 --> Multiplier is 1
+
+Place bet ($400 available, 0 to quit):
+client: betting 10
+Dealer shows : 4
+You have : K 2 = 12
+(H)it (S)tand (D)ouble : 
+client: s
+Dealer has : 4 T = 14
+hit
+Dealer has : 4 T 9 = 23
+bust
+You win $10
+
+client: Hand #4 Data
+client: ------------------
+client: running count: -1
+client: Remaining cards: 33
+client: True Count is -1.575758 --> Multiplier is 1
+
+Place bet ($410 available, 0 to quit):
+client: betting 10
+Dealer shows : J
+You have : 9 J = 19
+(H)it (S)tand (D)ouble : 
+client: s
+Dealer has : J 5 = 15
+hit
+Dealer has : J 5 Q = 25
+bust
+You win $10
+
+client: Hand #5 Data
+client: ------------------
+client: running count: -3
+client: Remaining cards: 28
+
+client: Program Finished
+client: 5 total hands played
+Your net cash change was: $20

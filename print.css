@@ -1,0 +1,35 @@
+/*   Print stylesheet 
+     by Kevin Zink 2004 */
+h1 { 
+padding: .5em 1em .1em 1em; 
+border-color: red;
+border-width: 5px 0 5px 0; 
+}
+
+h2 
+{ 
+color: black;
+margin: 0 30% .5em 0;
+border-color: red;
+border-width: 2px 0 2px 0; 
+}
+
+div.gentry 
+{
+margin: 0 30% 1em 5%; 
+}
+
+div.gentry ul 
+{
+color: black; 
+}
+
+div#nav
+{
+display: none;
+}
+
+p#footer
+{
+display:none;
+}

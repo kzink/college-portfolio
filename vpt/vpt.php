@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<title>Virtual Page Table</title>
+<?php
+include("../header.php");
+?>
+</head>
+
+<body>
+<h1>Virtual Page Table</h1>
+
+<?php
+include("../navbar.php");
+?>
+
+<h2>Program Description</h2>
+<div class="gentry">
+The virtual page table is a program that simulates, as the name indicates, a virtual page table.  
+At runtime, the user indicates how large the page table is, how large each page table entry is, and a
+test file to read input from.  
+The test file contains a listing of PIDs and memory addresses.  
+As the PID's and memory addresses are read in, they are added as entries in the page table--unless
+they have already been entered, in which case a "hit" has occurred and no entry is created.  
+However, when the page table is full of entries, and a new one must be created, a replacement algorithm is 
+implemented.  At runtime, the user gets to choose which algorithm: least recently used or 
+first in first out.  Each algorithm has its strengths and its weaknesses, as is evident from 
+the program's results.
+</div>
+
+<h2>Features</h2>
+<div class="gentry"><ul>
+<li>Written in C++</li>
+<li>OO approach</li>
+<li>Emulates a virtual page table</li>
+<li>Utilizes LRU and FIFO replacement algorithms</li>
+<li>Effective at demonstrating the perks and detriments of each algorithm</li>
+<li><a href="pagetable.data">Page Table Data (17meg)</a></li>
+</ul></div>
+
+<h2>Sample Run</h2>
+<div class="gentry">
+<table class="codebox" >
+<tr><td><pre>
+Use syntax: ./vpt file mem_size page_size FIFO/LRU
+
+kevin@LightningJoe:~/public_html/portfolio/vpt$ ./vpt pagetable.data 2000 30 FIFO
+
+total misses: 1042804
+</pre> </td></tr>
+</table>
+</div>
+
+<?php
+include("../footer.php");
+?>
+
+</body>
+</html>

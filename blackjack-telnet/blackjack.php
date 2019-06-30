@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<title>Blackjack Telnet Server</title>
+<?php
+include("../header.php");
+?>
+</head>
+
+<body>
+<h1>Blackjack Telnet Server</h1>
+
+<?php
+include("../navbar.php");
+?>
+
+<h2>Program Description</h2>
+<div class="gentry">
+This program hosts blackjack over telnet.  It is basically just my 
+<a href="../blackjack/blackjack.php">Blackjack program</a>
+with sockets added in to allow a user to play from a remote location.
+</div>
+
+<h2>Features</h2>
+<div class="gentry"><ul>
+<li>Written in C</li>
+<li>Utilizes telnet connection through sockets</li>
+<li>Implements TCP packets</li>
+<li>Functional programming approach</li>
+<li>Modularized code via subroutines</li>
+</ul>
+</div>
+
+<h2>Sample Run</h2>
+<div class="gentry">
+<table class="codebox" >
+<tr><td><pre>
+kevin@LightningJoe:~/public_html/portfolio/blackjack-telnet$ ./bjack 5000
+Waiting for data on port TCP 5000
+</pre></td></tr>
+</table>
+<p class="subtext">Server launching</p>
+
+<table class="codebox" >
+<tr><td><pre>
+kevin@LightningJoe:~$ telnet localhost 5000
+
+Trying 127.0.0.1...
+Connected to localhost.localdomain.
+Escape character is '^]'.
+
+Enter starting amount of cash: 500
+Enter number of decks: 1
+Starting money - 500
+Number of decks - 1
+Number of total cards - 52
+
+Shuffling shoe...
+Starting game...
+
+Place bet ($500 available, 0 to quit): 500
+Dealer shows : 7
+You have : 7 T = 17
+(H)it (S)tand : h
+You have : 7 T 2 = 19
+(H)it (S)tand: s
+Dealer has : 7 6 = 13 - hit
+Dealer has : 7 6 Q = 23 - Bust
+You win $500
+
+Place bet ($1000 available, 0 to quit): 0
+Your net cash change was: $500
+</pre></td></tr>
+</table>
+<p class="subtext">Client interface</p>
+</div>
+
+<?php
+include("../footer.php");
+?>
+
+</body>
+</html>

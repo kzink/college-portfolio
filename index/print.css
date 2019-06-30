@@ -1,0 +1,32 @@
+/*   Print stylesheet 
+     by Kevin Zink 2004 */
+h1 { 
+border-color: red;
+padding: .5em 1em .1em 1em; 
+}
+
+h2 
+{ 
+color: black;
+margin: 0 30% .5em 0;
+}
+
+div.gentry 
+{
+margin: 0 30% 1em 5%; 
+}
+
+div.gentry ul 
+{
+color: black; 
+}
+
+div#nav ul
+{ 
+border-color: red;
+}
+
+div#nav li 
+{
+border-color: red;
+}

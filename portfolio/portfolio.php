@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<title>Portfolio</title>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<link rel="stylesheet" type="text/css" href="../navbar.css" />
+</head>
+
+<body>
+<h1>Portfolio</h1>
+
+<?php
+include("../navbar.php");
+?>
+
+<h2>Program Description</h2>
+<div class="gentry">
+Yes, I consider this portfolio a project, as well.  It has been quite an undertaking as a matter of
+fact.  By creating this portfolio, I've learned XHTML and CSS quite thoroughly, as well as a little
+bit of PHP.
+</div>
+
+<h2>Features</h2>
+<div class="gentry"><ul>
+<li>CSS and XHTML validated</li>
+<li>Very clean HTML code through use of stylesheets</li>
+<li>Minimized duplication of HTML code through use of PHP</li>
+<li>Printer-friendly through use of print-only stylesheet</li>
+<li>Very small (byte-wise) and easy to read</li>
+</ul></div>
+
+<?php
+include("../footer.php");
+?>
+
+</body>
+</html>

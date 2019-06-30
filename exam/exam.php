@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<title>Exam</title>
+<?php
+include("../header.php");
+?>
+</head>
+
+<body>
+<h1>Exam</h1>
+
+<?php
+include("../navbar.php");
+?>
+
+<h2>Program Description</h2>
+<div class="gentry">
+<p>This program was created to administer an exam.  It is constructed around the principles of
+inheritence and polymorphism.  The program can display three types of questions: multiple choice, 
+true or false, and short answer.</p>
+
+<p>Each question type inherits basics properties from a parent
+class (specifically, the question, itself, and its weight).  Of course, each type of question has
+distinct properties; for instance, multiple choice questions give the test taker a selection of answers.  
+To properly model the nuances of each question type, I used <i>abstract</i> methods. This enabled me 
+to handle displaying the question and accepting and validating the user's answer polymorphically, and
+it was consequently much easier.</p>
+</div>
+
+<h2>Code Snippet</h2>
+<div class="gentry">
+<table class="codebox" >
+<tr><td><pre>
+public abstract class Question {
+    private int weight;
+    private String text; 
+    
+    public Question(String s) {
+        text = s;
+    }
+    public void setWeight(int w) {
+        if (w &lt; 1) {
+            System.exit(1);
+        }
+        weight = w;   
+    }
+    public int getWeight() {
+        return weight;
+    }
+    public String getText() {
+        return text;
+    }
+    public abstract boolean ask();
+}
+</pre></td></tr>
+</table>
+<p class="subtext">The parent class for each question (condensed)</p>
+</div>
+
+<h2>Features</h2>
+<div class="gentry"><ul>
+<li>Written in Java 1.4.2 Standard Edition</li>
+<li>Demonstrates inheritence and polymorphism</li>
+<li>Rigorous console-based user interface</li>
+<li>Validates user input with simple input checking</li>
+<li><a href="./docs/">Javadocs for Exam</a></li>
+</ul></div>
+
+<h2>Sample Run</h2>
+<div class="gentry">
+<table class="codebox" >
+<tr><td><pre>
+kevin@LightningJoe:~/public_html/portfolio/exam$ java ExamDemo
+
+The capital of the state of Nebraska is Lincoln? (t)rue or (f)alse
+Answer: TrUe
+Invalid Answer; try again:  T
+The answer you chose, true, is the correct answer.
+
+What U.S. state has the largest population?
+a) Florida
+b) California
+c) Rhode Island
+d) Nevada
+e) Michigan
+Answer: f
+Invalid answer; try again:  B
+The answer you chose, California, is the correct answer.
+
+What U.S. city has the nickname "The Windy City"?
+Answer: ChiCaGo
+The answer you chose, "ChiCaGo," is the correct answer.
+
+There are 51 states in the U.S.? (t)rue or (f)alse
+Answer: f
+The answer you chose, false, is the correct answer.
+
+What is the capital of Arizona?
+a) Phoenix
+b) Flagstaff
+c) Parker
+Answer:
+</pre></td></tr>
+</table>
+</div>
+
+<?php
+include("../footer.php");
+?>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+/*   Navbar stylesheet 
+     by Kevin Zink 2004 */
+div#nav 
+{
+float: right;
+color: white;
+margin-top: -.7em;
+}
+
+div#nav ul 
+{
+margin: 0;
+padding: 0;
+background: rgb(118, 22, 22);
+border-right: 3px solid rgb(249, 160, 160);
+border-left: 3px solid rgb(249, 160, 160);
+}
+
+div#nav li 
+{
+position: relative;
+border-bottom: 1px solid rgb(249, 160, 160);
+font: bold 12px sans-serif;
+list-style: none;
+text-align: center;
+line-height: 2.5em;
+padding: .1em 0;
+width: 190px;
+}
+
+div#nav li a 
+{
+display: block;
+text-decoration: none; 
+color: white;
+width: 190px;
+}
+
+div#nav ul ul 
+{
+position: absolute;
+display: none;
+border-top: 3px solid rgb(249, 160, 160);
+border-right: 3px solid rgb(249, 160, 160);
+border-left: 3px solid rgb(249, 160, 160);
+width: 190px;
+}
+
+div#nav li.submenu 
+{
+background: url(submenu-rt.gif) 1% 50% no-repeat;
+}
+
+div#nav ul.level2 
+{
+top: -3px;
+right: 190px;
+}
+
+div#nav li:hover, 
+div#nav li.submenu:hover, 
+div#nav li.submenu li.submenu:hover
+{
+background-color: rgb(249,160,160);
+}
+
+div#nav ul.level1 li.submenu:hover ul.level2
+{
+display: block;
+}

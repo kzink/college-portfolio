@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<title>Polygon splitter</title>
+<?php
+include("../header.php");
+?>
+</head>
+
+<body>
+<h1>Polygon Splitter</h1>
+
+<?php
+include("../navbar.php");
+?>
+
+<h2>Program Description</h2>
+<div class="gentry">
+The polygon splitter was created to aid the drawing of polygons in OpenGL.  By default,
+OpenGL does is not able to handle concave polygons, so it is up to the programmer
+to determine how to manipulate said polygons.  Thus, this program splits a concave polygon
+into convex polygons using rather complicated vector and point algorithms.
+</div>
+
+<h2>Code Snippet</h2>
+<div class="gentry">
+<table class="codebox" >
+<tr><td><pre>
+//Construction of 2 separate Polygons (split from the main polygon)
+Polygon * poly1 = new Polygon();
+Polygon * poly2 = new Polygon();
+
+// Points for Polygon #1
+poly1->addPoint(mPoly->getX(index1), mPoly->getY(index1)); //point 1
+poly1->addPoint(Px, Py); //point2 is the intersection point
+
+// remaining points for polygon 1
+for (int k = index4; k != index1; k = (k + 1) % mPoly->getSize()) {
+    poly1->addPoint(mPoly->getX(k), mPoly->getY(k));  
+}
+
+// Points for Polygon #2
+poly2->addPoint(mPoly->getX(index2), mPoly->getY(index2)); //starting point for poly2
+for (k = (index2 + 1) % mPoly->getSize(); k != index4; k = (k + 1) % mPoly->getSize()) {
+    // we don't add a point if it is the same as the intersection point (it's added later)
+    if (mPoly->getX(k) == Px &amp;&amp; mPoly->getY(k) == Py) {
+    } else {
+        poly2->addPoint(mPoly->getX(k), mPoly->getY(k));
+    }
+}
+poly2->addPoint(Px, Py); //the end point for poly2 is the intersection point
+
+// This recursively calls the concavity test on the newly created polygons
+testConcavity(poly1);
+testConcavity(poly2);
+
+delete mPoly; //delete the original polygon that's no longer needed from the heap
+</pre></td></tr>
+</table>
+<p class="subtext">Portion of the program that constructs new polygons</p>
+</div>
+
+
+<h2>Features</h2>
+<div class="gentry"><ul>
+<li>Written in C++/OpenGL</li>
+<li>Advanced graphics algorithms</li>
+<li>Decoupled Object Oriented Design</li>
+<li>Effective pointer manipulation</li>
+<li>Approaches New/Delete paradigm appropriately</li>
+</ul></div>
+
+<h2>Sample Run</h2>
+<div class="gentry">
+<img style="border:1px solid red;width:800px;height:400px" src="polysplit.jpg" alt="Polysplitter"/>
+<p class="subtext">Left: the polygon split<br/>Right: the polygon unsplit made in 
+<a href="/~kevin/polydrawer/applet.html">Polydrawer</a>
+</p>
+</div>
+
+<?php
+include("../footer.php");
+?>
+
+</body>
+</html>

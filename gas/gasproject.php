@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<title>Gas Station Project</title>
+<?php
+include("../header.php");
+?>
+</head>
+
+<body>
+<h1>Gas Station Project</h1>
+
+<?php
+include("../navbar.php");
+?>
+
+<h2>Program Description</h2>
+<div class="gentry">
+<p>This was a semester-long project from my software engineering class at UNO.  The goal of this 
+project was to create a gas station management software package using the classic waterfall development
+lifecycle.  Some of the requirements that needed to be met were: the ability to control gas pumps, 
+keep track of in-store inventory, and provide communication between station employees and the head office 
+management.</p>  
+
+<p>This project was not so much an exercise in programming as it was in software
+design documentation.  That is to say, 
+the bulk of this project was a compilation of 5 design documents amassed into a 100+ page folder.  
+More specifically, this project was separated into 5 phases.  What follows is a description of 
+my role in this team and comprehensive description of each phase (the original MS word .doc file 
+for each phase is also available in the links below).</p>
+</div>
+
+<h2>My Role in the Team</h2>
+<div class="gentry">
+<p>My team for this project consisted of three other classmates, only one of whom I knew prior to the
+creation of the group, and myself.  Our group creation was completely arbitrary; we got to pick 
+our groupmates.</p>
+
+<p>One of my groupmates was well versed in PHP and MySQL, so he was, early on, placed in charge 
+of coding the project (which wasn't that much work because it was a prototype).  My other two
+groupmates and myself were in charge of the documentation.</p>  
+
+<p>Leadership of our group was assumed by one of my documentation groupmates, but as the project 
+began, it became apparent through the grades we were receiving on group assignments that a 
+change needed to be made.  Thus, I assumed leadership by offering be the "central" repository for 
+our project documents.  So, my other two groupmates sent me any documents that they created 
+and I would go over them, add and remove content, and make suggestions regarding changes that 
+I felt would improve the project.  I also did a substantial amount of work to ensure the quality 
+in our projects.  I would estimate that I created approximately 80% of all diagrams and 60% of the 
+text in our project. I am quite proud to say, after I took commmand, our project grades raised 
+substantially from C and D letter grades to B+'s and A's.</p> 
+
+<p>As group leader, I attempted to motivate my groupmates by implementing some of the positive strategies
+I read in Dale Carnegie's 
+<i><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0671723650/qid=1096574922/sr=8-1/ref=pd_csp_1/104-1686934-1447902?v=glance&amp;s=books&amp;n=507846">"How to Win Friends and Influence People."</a></i> 
+I believe I was quite successful in my leadership position, as we never experienced in heated arguments 
+and everyone was willingly a participant in the groupwork.  In fact, after the project was over, I 
+left having made three new and very cool friends.  To sweeten the deal, our final project grade was an A 
+(which may have been the the highest in the class).</p> 
+</div> 
+
+<h2>The Phases</h2>
+<div class="gentry">
+<h2 class="flush"><a href="Final Paper--Phase 1.doc">Phase 1: System Specification</a></h2> 
+<p>This document elaborates on the requirements and specifications for the gas station system with 
+varying levels of depth to facilitate familiarity with the system.  It is focused more indicating what 
+the system needs to do to fulfill the requirements set forth by the user; that is, it does not focus 
+on the specific semantic and syntactical methods that will be used to achieve completion and fulfillment 
+of the user's requirements.</p>
+
+<h2 class="flush"><a href="Final Paper--Phase 2.doc">Phase 2: Specific Requirements</a></h2>
+<p>This paper lists out specific functional and non-functional requirements for the gas station 
+software.  Some of the requirements are: required features (add/remove users, items, gas, etc.), 
+performence (ability to run on standard PC's), and communication (ability to transfer data over TCP/IP).
+It also contains multiple <i>ERD</i> diagrams that depict how the system interfaces with its database, 
+<i>state transition diagrams</i> that describe the clerk and manager systems, and level 0 and 1 
+<i>data flow diagrams</i> for the clerk and manager systems.</p> 
+
+<h2 class="flush"><a href="Final Paper--Phase 3.doc">Phase 3: Software Planning</a></h2> 
+<p>This document analyzes the risks, costs, and time schedules for the completion of the gas station 
+software package.  It identifies all elements that need to be monitored to ensure a satisfactory 
+completion of the system in a timely manner, and it also touches on the team structure.  It points 
+out resources required, how to manage said resources, what risks are involved, cost estimates, 
+and quality control implementations.  The majority of the data for this documentation was derived 
+with the aid of the <i>Cocomo II</i> software package.</p>
+
+<h2 class="flush"><a href="Final Paper--Phase 4.doc">Phase 4: Design Document</a></h2>
+<p>This document describes the modular structure of the gas station system.  It documents all of 
+the modules, databases, and user interfaces in the system.</p>
+
+<h2 class="flush"><a href="Final Paper--Phase 5.doc">Phase 5: Object-Oriented Analysis</a></h2>
+<p>The purpose of this document is to provide a brief object-oriented analysis of the gas station system. 
+It mostly consists of <i>use cases</i>. Each use case is described using <i>sequence diagrams</i>
+and <i>state chart diagrams</i>.  It also contains a comprehensive <i>class diagram</i> of the system.</p>
+</div>
+
+<h2>Features</h2>
+<div class="gentry"><ul>
+<li>Written in PHP/MySQL</li>
+<li>Waterfall software development lifecycle</li>
+<li>Demonstrates software design documentation</li>
+<li>Features multiple UML diagram types</li>
+<li>Exhibits ERD diagrams for database design</li>
+</ul></div>
+
+<h2>Various Diagrams from the Project</h2>
+<div class="gentry">
+<img class="picbox" src="./classdiagram.JPG" alt=""/>
+<p class="subtext">A comprehensive class diagram for the project</p>
+<img class="picbox" src="./cocomo.JPG" alt="cocomo.JPG" />
+<p class="subtext">A diagram from Cocomo II's schedule reporter</p>
+<img class="picbox" src="./dbtable.JPG" alt="dbtable.JPG" />
+<p class="subtext">A database table from the project</p>
+<img class="picbox" src="./dfdlvl0.JPG" alt="dfdlvl0.JPG" />
+<p class="subtext">A level 0 data flow diagram</p>
+<img class="picbox" src="./dfdlvl1.JPG" alt="dfdlvl1.JPG" />
+<p class="subtext">A level 1 data flow diagram</p>
+<img class="picbox" src="./managerstd.JPG" alt="managerstd.JPG" />
+<p class="subtext">A state transition diagram for the manager module</p>
+<img class="picbox" src="./modules.JPG" alt="modules.JPG" />
+<p class="subtext">A comprehensive list of all of the modules in the system and their dependencies</p>
+<img class="picbox" src="./sequence.JPG" alt="sequence.JPG" />
+<p class="subtext">A sequence diagram for a use case</p>
+<img class="picbox" src="./statechart.JPG" alt="statechart.JPG" />
+<p class="subtext">A state chart diagram - corresponds with above sequence diagram</p>
+<img class="picbox" src="./team.JPG" alt="team.JPG" />
+<p class="subtext">Diagram depicting the team communication for this project (simulated)</p>
+</div>
+
+<?php
+include("../footer.php");
+?>
+
+</body>
+</html>

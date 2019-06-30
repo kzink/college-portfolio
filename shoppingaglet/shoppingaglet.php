@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<title>Shopping Aglet</title>
+<?php
+include("../header.php");
+?>
+</head>
+
+<body>
+<h1>Shopping Aglet</h1>
+
+<?php
+include("../navbar.php");
+?>
+
+<h2>Program Description</h2>
+<div class="gentry">
+<p>This program is quite complex.  Like the Javaspaces client, it also dives into the realm of Java RMI 
+through the use of IBM's Aglets library.
+An aglet is a Java agent able to autonomously and spountanously move from one host to another. 
+Aglets are created and controlled through a stand-alone Java server called <i>Tahiti</i>.  
+Tahiti servers can create, send, receive, and destroy aglets.</p>  
+
+<p>The aglets I have created for this program represent a thrifty shopper.  An aglet called the 
+<i>Controller Agent</i> is created on every Tahiti that represents a store.  Each store loads a list of 
+items and prices from a metadata file.  Then, an <i>Interface Agent</i> is created on the Tahiti server which will be
+our buyer.  The interface agent launches a simple GUI which contains a search box and a
+list of seller sites (IP addresses).</p>
+
+<p>Once properly configured, the buyer puts in a search string
+and a <i>Shopping Agent</i> is sent to the first seller site (with an itinerary which contains a list
+of all seller sites).  The shopping aglet will visit each site in its itinerary, query the site
+for the buyer's desired item, and finally return to the buyer Tahiti server to report which site
+had the cheapest price.</p>
+</div>
+
+<h2>Features</h2>
+<div class="gentry"><ul>
+<li>Written in Java 1.4.2 Standard Edition and IBM's Aglets library</li>
+<li>Implements Java RMI</li>
+<li>Interesting network-based commerce application</li>
+<li>Transfers aglet objects over TCP/IP</li>
+<li><a href="./docs/">Javadocs for Shopping Aglet</a></li>
+</ul>
+</div>
+
+<h2>Sample Run</h2>
+<div class="gentry">
+<img class="picbox" src="./shoppingaglet.jpg" alt="shoppingaglet!"/>
+<p class="subtext">Tahiti servers and shopping agent GUI</p>
+<img class="picbox" src="./agletconsole.jpg" alt="agletconsole!"/>
+<p class="subtext">Search results from the console</p>
+</div>
+
+<?php
+include("../footer.php");
+?>
+
+</body>
+</html>

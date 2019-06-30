@@ -1,0 +1,55 @@
+# db is gas user is gas pass is gaspass
+
+drop table if exists items, purchases, logins, pumps, gas;
+
+CREATE TABLE logins 	(
+		LoginName	varchar(25),
+		PassPhrase	varchar(80),
+		UserName	varchar(80),
+		EmailAddress	varchar(80),
+		Level		Integer
+		);
+
+CREATE TABLE purchases 	(
+		SeqNum		integer primary key auto_increment,
+		LoginName	varchar(25),
+		Date		date,
+		StoreNumber	integer,
+		PaymentType	enum('cash', 'credit'),
+		SubTotal	Float(4, 2),
+		Total		Float(4, 2)
+		);
+
+CREATE TABLE items 	(
+		ItemNumber	integer primary key auto_increment,
+		ItemName	varchar(25),
+		Price		Float(4, 2),
+		Taxable		enum('yes', 'no'),
+		Quantity	Float	
+		);
+
+CREATE TABLE pumps	(
+		PumpNumber		integer,
+		Status			enum('ok', 'notok'),	# busted or not
+		InUse			enum('yes', 'no'),
+		AmountAuthorized	Float(4, 2),		# zero if nothing is authorized
+		Halted			enum('true', 'false'),
+		Reset			enum('true', 'false')
+		);
+
+CREATE TABLE gas	(
+		SeqNum			integer primary key auto_increment,
+		Type			varchar(25)
+		);
+
+INSERT INTO logins (LoginName, PassPhrase, UserName, Level, EmailAddress) values ('manager', 'manager_pass', 'John Doe Sr.', '2', 'gas_project@yahoo.com');
+INSERT INTO logins (LoginName, PassPhrase, UserName, Level) values ('clerk', 'clerk_pass', 'John Doe Jr.', '1');
+INSERT INTO pumps  (PumpNumber, Status, InUse, AmountAuthorized, Halted, Reset) values ('1', 'ok', 'no', '0', 'false', 'false');
+INSERT INTO pumps  (PumpNumber, Status, InUse, AmountAuthorized, Halted, Reset) values ('2', 'ok', 'no', '0', 'false', 'false');
+INSERT INTO pumps  (PumpNumber, Status, InUse, AmountAuthorized, Halted, Reset) values ('3', 'ok', 'no', '0', 'false', 'false');
+INSERT INTO gas	   (Type) values ('Unleaded');
+INSERT INTO gas	   (Type) values ('Unleaded Plus');
+INSERT INTO gas	   (Type) values ('Diesel');
+INSERT INTO items  (ItemName, Price, Taxable, Quantity) values ('Unleaded', '1.25', 'no', '1000');
+INSERT INTO items  (ItemName, Price, Taxable, Quantity) values ('Unleaded Plus', '1.70', 'no', '1000');
+INSERT INTO items  (ItemName, Price, Taxable, Quantity) values ('Diesel', '1.50', 'no', '1000');

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<title>Technical Writing Projects</title>
+<?php
+include("../header.php");
+?>
+</head>
+
+<body>
+<h1>Technical Writing Projects</h1>
+
+<?php
+include("../navbar.php");
+?>
+
+<h2>Project Description</h2>
+<div class="gentry">
+<p>This section is devoted to the projects I completed in my technical writing class.  I have chosen to
+include these in my portfolio because they demonstrate my writing and leadership abilities, even though
+they are not related to programming.</p>  
+
+<p>During this class, we completed two large group projects, among some some other smaller, individual
+projects.  What follows is a description of the projects and role in the team.  The original  
+MS word .doc files for each project are also available in the links below.</p>
+</div>
+
+<h2>My Role in the Team</h2>
+<div class="gentry">
+<p>My team for these projects was created by our instructor, who grouped us based on our major.  So,
+my group was composed of computer science students - none of whom I knew prior to the class.</p>
+
+<p>Since all of our projects were writing, we each did a portion of the writing.  Ideally, we all would
+do an equal portion, but that did not occur very frequently.  I would estimate that I did probably 50% of
+the workload, unfortunately.</p>
+
+<p>Leadership of our group was decided when our group was created.  I was not the group leader, at this
+time. However, after a few days work on our first project, it became apparent that our leader was not
+reliable. Although he was exceedingly smart, he frequently missed group meetings and did not complete
+work by our set deadlines.  Thus, I emerged as our new group leader.  We were behind schedule on our
+first project, but with a little motivation and hard work, we were able to finish the project on time
+and consequently receive the highest grade in the class on this project, as well as every other project.
+</p>
+
+<p>As group leader, I attempted to motivate my groupmates by implementing some of the positive strategies
+I read in Dale Carnegie's 
+<i><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0671723650/qid=1096574922/sr=8-1/ref=pd_csp_1/104-1686934-1447902?v=glance&amp;s=books&amp;n=507846">"How to Win Friends and Influence People."</a></i> 
+Specifically, instead of pointing out flaws in someone's work directly, I would take a more constructive
+approach: "Your work on _________ is really great, and it could be even better if you did ________."
+Another approach I used was sympathizing with my teammates.  After they told me what they disliked or
+hated about the project, and I agreed with them, they were much more willing to do the work.</p>  
+</div> 
+
+<h2>The Projects</h2>
+
+<div class="gentry">
+<h2 class="flush"><a href="project1.doc">Computer Programming Library Manual</a></h2> 
+<p>The goal of this project was to create a manual on how to use the UNO library for up-and-coming 
+computer science students.  This project details the user on what books to look for in the library,
+how to use the UNO computer system, and an interview with one of the instructors from UNO.</p>
+
+<h2 class="flush"><a href="project3.rtf">Hard Drive Installation Manual</a></h2>
+<p>This project was created to simulate a step-by-step manual for installing a hard drive into a computer.
+The manual contains very rigorous and specific instructions, including pictures, warnings, hazards, and
+other details.</p>
+</div>
+
+<h2>Features</h2>
+<div class="gentry"><ul>
+<li>Demonstrates technical writing abilities</li>
+<li>Exhibits effective groupwork</li>
+</ul></div>
+
+<?php
+include("../footer.php");
+?>
+
+</body>
+</html>

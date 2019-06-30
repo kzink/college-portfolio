@@ -1,0 +1,7 @@
+# Host address | Name | Neighbor 1 | Neighbor 2
+mixmaster:5000|A|mixmaster:6000|mixmaster:10000
+mixmaster:6000|B|mixmaster:7000|mixmaster:5000
+mixmaster:7000|C|mixmaster:8000|mixmaster:6000
+mixmaster:8000|D|mixmaster:7000|mixmaster:9000
+mixmaster:9000|E|mixmaster:8000|mixmaster:10000
+mixmaster:10000|F|mixmaster:9000|mixmaster:5000

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<title></title>
+<?php
+include("../header.php");
+?>
+</head>
+
+<body>
+<h1>Linux - Debian Box</h1>
+
+<?php
+include("../navbar.php");
+?>
+
+<h2>Project Description</h2>
+<div class="gentry">
+<p> This was a project I undertook to create my own linux box running Debian.  I created this
+Box to further my own application development and understanding of linux systems.  It is currently
+hosting multiple servers, including apache, MYSQL, FTP, and SSH.  Likewise, it is hosting this 
+portfolio, as well as some other web-based applications I have created.</p>
+
+<p> Another service my linux box provides is internet connection sharing through the use of 
+ipchains managed by a program called ipkungfu.  I have found linux internet connection sharing to 
+be much more stable than windows-based connection sharing.</p>
+
+<p>I put together this linux box with some parts from an older computer.  It's running on an
+Athlon 1.4ghz, which I thought was reasonable fast, so the box has been aptly nicknamed 
+"Lightning Joe."</p>
+
+</div>
+
+<h2>Features</h2>
+<div class="gentry"><ul>
+<li>Demonstrates my ability to administrate Linux systems</li>
+<li>Exhibits my knowledge of various linux-based internet services</li>
+</ul></div>
+
+<?php
+include("../footer.php");
+?>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+Processed 200 lines from the following files:
+tiny.log 
+
+==============================================================================
+HOSTNAMES
+==============================================================================
+
+  Hits   %-age    Resource
+  ----   -----    --------
+    13    6.50   137.48.130.113
+     1    0.50   137.48.130.14
+    19    9.50   137.48.130.18
+    12    6.00   66.37.237.128
+    13    6.50   adsl-18-106-138.sdf.bellsouth.net
+     1    0.50   crawler10.googlebot.com
+     1    0.50   crawler11.googlebot.com
+     1    0.50   crawler14.googlebot.com
+     1    0.50   crawlers.looksmart.com
+     3    1.50   dialup-65.58.122.249.Dial1.Omaha1.Level3.net
+     2    1.00   figaro.verity.com
+     9    4.50   ip68-106-212-208.om.om.cox.net
+     3    1.50   ip68-13-162-19.om.om.cox.net
+    13    6.50   ip68-13-163-55.om.om.cox.net
+    35   17.50   ip68-13-66-249.om.om.cox.net
+    26   13.00   ip68-13-78-171.om.om.cox.net
+     9    4.50   ip68-224-161-39.om.om.cox.net
+     6    3.00   ip68-225-175-203.om.om.cox.net
+     1    0.50   j3111.inktomisearch.com
+     1    0.50   j3154.inktomisearch.com
+     1    0.50   j3155.inktomisearch.com
+    28   14.00   pc021807.dsc.unomaha.edu
+     1    0.50   si1000.inktomisearch.com
+ -----
+   200 entries displayed
+
+==============================================================================
+DOMAINS
+==============================================================================
+
+  Hits   %-age    Resource
+  ----   -----    --------
+    45   22.50   UNKNOWN (dotted-quad or other)
+    13    6.50   bellsouth.net
+   101   50.50   cox.net
+     3    1.50   googlebot.com
+     4    2.00   inktomisearch.com
+     3    1.50   level3.net
+     1    0.50   looksmart.com
+    28   14.00   unomaha.edu
+     2    1.00   verity.com
+ -----
+   200 entries displayed
+
+==============================================================================
+URLS
+==============================================================================
+
+  Hits   %-age    Resource
+  ----   -----    --------
+     1    0.50   /
+     1    0.50   /controlpanel
+     1    0.50   /guide.php
+     2    1.00   /movies/
+     1    0.50   /movies/amazon.php
+     1    0.50   /movies/content.php
+     1    0.50   /movies/images/badassjosey.jpg
+     1    0.50   /movies/images/bannerlogo.jpg
+     1    0.50   /movies/images/camera.jpg
+     1    0.50   /movies/images/mirakicksass.jpg
+     1    0.50   /movies/images/pixel.gif
+     1    0.50   /movies/images/reels.jpg
+     1    0.50   /movies/images/zzz.jpg
+     1    0.50   /movies/list.php?d=desc&l=ho&w=rel
+     1    0.50   /movies/list.php?d=desc&l=th&w=rel
+     1    0.50   /movies/toc.php
+     1    0.50   /putty.exe
+     3    1.50   /robert
+     7    3.50   /robert/
+     7    3.50   /robert/images/bobself.jpg
+     7    3.50   /robert/images/sun2.jpg
+     7    3.50   /robert/splashpage.htm
+     7    3.50   /robert/topnavbar.php
+     9    4.50   /robert/uno/
+     1    0.50   /robert/uno/1400
+    13    6.50   /robert/uno/1400/
+     3    1.50   /robert/uno/1400/docs/0020106.pdf
+     2    1.00   /robert/uno/1400/docs/0060206.pdf
+     2    1.00   /robert/uno/1400/docs/0070206.pdf
+     2    1.00   /robert/uno/1400/docs/0080206.pdf
+     3    1.50   /robert/uno/1400/docs/0090206.pdf
+     5    2.50   /robert/uno/1400/docs/0100206.pdf
+     5    2.50   /robert/uno/1400/docs/0110306.pdf
+     5    2.50   /robert/uno/1400/docs/0120206.pdf
+     2    1.00   /robert/uno/1400/docs/0130306.pdf
+     3    1.50   /robert/uno/1400/docs/0190306.pdf
+     3    1.50   /robert/uno/1400/docs/0200303.pdf
+     5    2.50   /robert/uno/1400/docs/0200306.pdf
+     5    2.50   /robert/uno/1400/docs/0210306.pdf
+     3    1.50   /robert/uno/1400/docs/0220306.pdf
+     5    2.50   /robert/uno/1400/docs/1400turnin.pdf
+     1    0.50   /robert/uno/1400/getlinks.php
+     2    1.00   /robert/uno/1400/getother.php
+     4    2.00   /robert/uno/1400/getslides.php
+     4    2.00   /robert/uno/1400/rss.php
+     4    2.00   /robert/uno/2850/rss.php
+     5    2.50   /robert/uno/grades/03031400001.htm
+     2    1.00   /robert/uno/grades/03031400006.htm
+    10    5.00   /robert/uno/images/xml.gif
+    11    5.50   /robert/uno/style.css
+     9    4.50   /robert/uno/unonavbar.htm
+     9    4.50   /robert/uno/unosplash.htm
+     1    0.50   /robots.txt
+     2    1.00   /submit.php
+     1    0.50   /v1i4/lengths.html
+     1    0.50   /v2i1/enigma.html
+     1    0.50   /v4i1/words41.html
+     1    0.50   /viewer.php?vol=2&iss=1&disp=275
+ -----
+   200 entries displayed
+
+==============================================================================
+BROWSERS
+==============================================================================
+
+  Hits   %-age    Resource
+  ----   -----    --------
+     8    4.00   Feedreader
+     3    1.50   Googlebot/2.1 (+http://www.googlebot.com/bot.html)
+    22   11.00   Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90)
+    13    6.50   Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Compaq)
+    28   14.00   Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322; .NET CLR 1.0.3705)
+    66   33.00   Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+     6    3.00   Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.0.3705; .NET CLR 1.1.4322)
+    33   16.50   Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322)
+     9    4.50   Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Creative)
+     1    0.50   Mozilla/4.0 compatible ZyBorg/1.0 Dead Link Checker (wn.zyborg@looksmart.net; http://www.WISEnutbot.com)
+     3    1.50   Mozilla/5.0 (Slurp/cat; slurp@inktomi.com; http://www.inktomi.com/slurp.html)
+     1    0.50   Mozilla/5.0 (Slurp/si; slurp@inktomi.com; http://www.inktomi.com/slurp.html)
+     1    0.50   Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.5b) Gecko/20030821 Mozilla Firebird/0.5+ StumbleUpon/1.63
+     4    2.00   contype
+     2    1.00   vspider
+ -----
+   200 entries displayed
+
+==============================================================================
+DATES
+==============================================================================
+
+  Hits   %-age    Resource
+  ----   -----    --------
+   200   100.00   13/Oct/2003
+ -----
+   200 entries displayed
+
+==============================================================================
+HOURS
+==============================================================================
+
+  Hits   %-age    Resource
+  ----   -----    --------
+    57   28.50   21
+   143   71.50   22
+ -----
+   200 entries displayed
+
+==============================================================================
+REFERERS
+==============================================================================
+
+  Hits   %-age    Resource
+  ----   -----    --------
+    97   48.50   UNKNOWN
+     6    3.00   http://morpo.com/robert/
+     2    1.00   http://morpo.com/robert/.
+     8    4.00   http://morpo.com/robert/splashpage.htm
+     6    3.00   http://morpo.com/robert/topnavbar.php
+    12    6.00   http://morpo.com/robert/uno/
+    23   11.50   http://morpo.com/robert/uno/1400/
+     2    1.00   http://morpo.com/robert/uno/1400/getother.php
+    11    5.50   http://morpo.com/robert/uno/1400/getslides.php
+     7    3.50   http://morpo.com/robert/uno/unonavbar.htm
+     2    1.00   http://myuno.unomaha.edu/bin/common/announcement.pl?action=LIST&context=course_entry&course_id=_82410_1&render_type=DEFAULT
+     4    2.00   http://www.morpo.com/robert/
+     4    2.00   http://www.morpo.com/robert/splashpage.htm
+     2    1.00   http://www.morpo.com/robert/topnavbar.php
+     4    2.00   http://www.morpo.com/robert/uno/
+     7    3.50   http://www.morpo.com/robert/uno/1400/
+     1    0.50   http://www.morpo.com/robert/uno/1400/getslides.php
+     2    1.00   http://www.morpo.com/robert/uno/unonavbar.htm
+ -----
+   200 entries displayed
+
+==============================================================================
+STATUS CODES
+==============================================================================
+
+  Hits   %-age    Resource
+  ----   -----    --------
+   137   68.50   200
+    28   14.00   206
+     4    2.00   301
+     1    0.50   302
+    27   13.50   304
+     3    1.50   404
+ -----
+   200 entries displayed
+
+Total number of bytes served: 5876725
+
