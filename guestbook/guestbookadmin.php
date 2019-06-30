@@ -6,20 +6,18 @@
 <head>
 <title>MySQL/PHP Guestbook</title>
 <?php
-include("../header.php");
+include("../header.html");
 ?>
 </head>
 
 <body>
 <h1>MySQL/PHP Guestbook</h1>
 
-<?php
-include("../navbar.php");
-?>
+<div class='w3-include-html' w3-include-html="../navbar.html"></div>
 
 <h2>Program Description</h2>
 <div class="gentry">
-I wrote this program to interface with my <a href="./guestbook.php">MySQL/PHP Guestbook</a>.  It is
+I wrote this program to interface with my <a href="./guestbook.html">MySQL/PHP Guestbook</a>.  It is
 written in HTML embedded ruby, or eRuby.  It interfaces with the same MySQL database that the guestbook
 sign-up program communicates with.  Its only feature is the ability to delete entries from the guestbook.
 </div>
@@ -32,9 +30,7 @@ sign-up program communicates with.  Its only feature is the ability to delete en
 
 <h2><a href="/~kevin/guestbook/guestadmin.rhtml">Try out the eRuby Guestbook Admin</a></h2>
 
-<?php
-include("../footer.php");
-?>
+<div class='w3-include-html' w3-include-html="../footer.html"></div>
 
 </body>
 </html>
